@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>TO-DO LIST</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Major+Mono+Display&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <h1>TO-DO LIST</h1>
+  <div id="todo">
+    <form id="addTask">
+
+      <input type="text" id="task" placeholder="Vad behöver göras?">
+      <br>
+      <label><i class="fa fa-calendar"></i></label>
+      <input type="date" id="date">
+      <label> <i class='fas fa-tag'></i></label>
+      <select id="category">
+        <option value="" selected disabled hidden>Välj kategori</option>
+        <option value="Skola">Skola</option>
+        <option value="Jobb">Jobb</option>
+      </select>
+      <br>
+      <button id="btn">Lägg till <i class='fas fa-plus'></i></button>
+
+    </form>
+  </div>
+
+
+  <div id="todofilter">
+
+
+    <input type="text" id="filter" placeholder="Sök efter en todo...">
+    <br>
+    <label class="container">All<input type="radio" checked="checked" name="radio" id="all">
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">Skola<input type="radio" name="radio" id="skola">
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">Jobb<input type="radio" name="radio" id="jobb">
+      <span class="checkmark"></span>
+    </label>
+
+  </div>
+
+
+  <div id="todolist">
+    <label>Att göra:</label>
+    <ul id="taskList"></ul>
+  </div>
+
+
+
+  <script src="https://kit.fontawesome.com/fc8f065bc3.js" crossorigin="anonymous"></script>
+  <script type="application/javascript" src="main.js"></script>
+</body>
+
+</html>
